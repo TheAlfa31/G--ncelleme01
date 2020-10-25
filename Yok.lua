@@ -1,1 +1,1 @@
-gg.alert("hee")
+gg.alert("Alfa")
