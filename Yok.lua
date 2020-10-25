@@ -748,14 +748,6 @@ end
 end
 
 function bedava()
-Detector = gg.getFile():match("[^/]+$")
-Name = "NoBanForwardHackTeam.lua"
-if Detector == Name then
-else
-Error = "⚠️Yeniden Adlandırılmış Script ⚠️\n Scriptin Adı: NoBanForwardHackTeam.lua\nBu Script VİP Scripttir Asıl Satıcı @ForwardHackAlfa Telegram: t.me/AHTTRR"
-gg.alert(Error)
-return
-end
 SnLcYSbBBaTvqtkabKhiy = '20201028'
 if os.date("%Y%m%d") > SnLcYSbBBaTvqtkabKhiy then
   hh = gg.alert("⛔Script Süreniz Dolmuştur⛔")
