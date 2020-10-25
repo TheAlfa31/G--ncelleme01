@@ -1,2 +1,1 @@
-gg.alert("Alfa")
-gg.alert("One")
+gg.alert("OHOOOOOOOO")
