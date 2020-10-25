@@ -1,1 +1,3 @@
-gg.alert("CUUUUUUURRRR")
+gg.alert("He")
+gg.alert("yok")
+gg.setVisible(false)
