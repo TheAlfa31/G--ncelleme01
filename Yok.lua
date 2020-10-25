@@ -1,1 +1,1 @@
-gg.alert("OHOOOOOOOO")
+gg.alert("runa")
