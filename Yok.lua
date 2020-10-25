@@ -1,5 +1,5 @@
 function asd()
-if os.date("%Y%m%d") > '20201023' then
+if os.date("%Y%m%d") > '20201028' then
  a = io.open("/storage/emulated/0/dropped.xml", "r")
 if not a then
 gg.alert("⚠️Lisans Bulunamadı⚠️")
