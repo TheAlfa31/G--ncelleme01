@@ -1091,7 +1091,6 @@ os.remove("/storage/emulated/0/Android/data/com.tencent.ig/cache")
       end
     end
   end
-end
 gg.alert("🛡️𝐅𝐨𝐫𝐰𝐚𝐫𝐝 𝐇𝐚𝐜𝐤 𝐓𝐞𝐚𝐦 𝐀𝐧𝐭𝐢 𝐁𝐚𝐧🛡️")
 end
 
