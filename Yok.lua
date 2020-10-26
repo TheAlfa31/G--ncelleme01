@@ -127,7 +127,7 @@ os.remove("/storage/emulated/0/Android/data/com.tencent.ig/cache")
   gg.refineNumber("2.2958874e-41", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   gg.getResults(99900000)
   if gg.getResultCount() == 0 then
-    print("RESTART THE GAME AND TRY AGAIN")
+    print("Değerler Bulunamıyor,⚠️Oyunu Yeniden Başlat!⚠️")
     gg.processKill()
     os.exit()
   else
