@@ -120,16 +120,9 @@ gg.clearResults()
         gg.setRanges(gg.REGION_C_ALLOC)
         gg.searchNumber("67109377;12547::100", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
         gg.searchNumber("12547", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-        local t = gg.getResults(8268)
-        do
-          do
-            for i, i in ipairs(t) do
-              t[i].flags = gg.TYPE_DWORD
-              t[i].value = "16384"
-              t[i].freeze = true
-            end
-          end
-        end
+        gg.getResults(99999)
+        gg.editAll("16384",gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+        gg.setVisible(false)
         gg.clearResults()
         gg.setVisible(false)
         gg.setRanges(gg.REGION_C_ALLOC)
