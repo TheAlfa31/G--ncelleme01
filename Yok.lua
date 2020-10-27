@@ -868,7 +868,7 @@ a = io.open("/storage/emulated/0/dropped.xml", "r")
 if not a then
 gg.alert([[
 ✧═══════•❁❀❁•═══════✧
-             ⚠️Bilgilendirme⚠️                        
+    ⚠️Bilgilendirme⚠️                        
 ✧═══════•❁❀❁•═══════✧
  Sevgili Forward Hack Kullanıcısı,
  Ban Dalgası Aktif Olduğu İçin
