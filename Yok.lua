@@ -45,8 +45,13 @@ end
 
 function F1()
 --3.parti gider
-gg.alert("🔰Bu Bölüm üzerinde Hala Çalışılıyor...🔰")
-HOME()
+gg.clearResults()
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("9.21956299e-41", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getRestults(550292)
+gg.editAll("0", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.alert("3.Parti Önlendi")
 end
 
 function F2()
