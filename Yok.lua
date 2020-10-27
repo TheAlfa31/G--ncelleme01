@@ -868,7 +868,7 @@ a = io.open("/storage/emulated/0/dropped.xml", "r")
 if not a then
 gg.alert([[
 ✧═══════•❁❀❁•═══════✧
-    ⚠️Bilgilendirme⚠️                        
+             ⚠️Bilgilendirme⚠️                        
 ✧═══════•❁❀❁•═══════✧
  Sevgili Forward Hack Kullanıcısı,
  Ban Dalgası Aktif Olduğu İçin
@@ -885,9 +885,9 @@ os.exit()
 else
 a = a:read("*a")
 end
-gg.toast("Yetkili Girişi")
+gg.toast("Yetkili Girişi Algılandı!")
 
-i="Güncelleme Durumu: Güncelleme Yok"
+i="Güncelleme Durumu: Bakım Var"
 
 
 otu=gg.choice({
