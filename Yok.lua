@@ -863,6 +863,30 @@ function exit()
 os.exit()
 end
 
+--Script Başlangıç Yeri
+a = io.open("/storage/emulated/0/dropped.xml", "r")
+if not a then
+gg.alert([[
+✧═══════•❁❀❁•═══════✧
+             ⚠️Bilgilendirme⚠️                        
+✧═══════•❁❀❁•═══════✧
+ Sevgili Forward Hack Kullanıcısı,
+ Ban Dalgası Aktif Olduğu İçin
+ Script Erişimini Kapattık!
+ Ban Dalgası Bittiği Zmn Hile Test
+ edilip Yeniden Kullanılışa
+ açılacaktır.
+ Anlayışınız İçin Teşekkür Ederiz.
+ 
+ @ForwardHackAlfa
+ Noob Developer.
+ ]])
+os.exit()
+else
+a = a:read("*a")
+end
+gg.toast("Yetkili Girişi")
+
 i="Güncelleme Durumu: Güncelleme Yok"
 
 
