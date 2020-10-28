@@ -280,7 +280,7 @@ end
 function F3()
 sf=gg.choice({
 	"📡Anten [Lobi+Oyun]📡",
-	"🔫Less Recoil [Lobi+Oyun]🔫",
+	"🔫Less Recoil [Lobi]🔫",
 	"🤯%50 Kafadan Vurma[Lobi+Oyun]🤯",
 	"➕Küçük Artı➕[Oyun]",
 	"🔙Geri🔙"
@@ -298,72 +298,14 @@ gg.toast("Antena✓")
 end
 
 if sf==2 then
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-function TENDEX(X,Y,Z,F,O)  gg.setRanges(X)gg.searchNumber(Y,gg.TYPE_DWORD)gg.getResults(Z)gg.editAll(F,gg.TYPE_DWORD)gg.clearResults()gg.toast("ACTIVATING") end 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- function BAIT(X,Y,Z,O)  gg.setRanges(X)gg.searchNumber(Y,gg.TYPE_DWORD)gg.getResults(Z)gg.clearResults()gg.toast("ACTIVATING") end 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-function RECOIL(X,Y,J,Z,F,O)  gg.setRanges(X)gg.searchNumber(Y,gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)gg.searchNumber(J,gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)gg.getResults(Z)gg.editAll(F,gg.TYPE_DWORD)gg.clearResults()gg.toast(O) end 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-TENDEX(8,"67109633",50000,"0")
-TENDEX(8,"67109633",50000,"0")
-TENDEX(8,"67109633",50000,"0")
-TENDEX(8,"135682",11082001,"0")
-TENDEX(8,"134658",11082001,"0")
-TENDEX(8,"133378",11082001,"0")
-TENDEX(8,"135938",11082001,"0")
-TENDEX(8,"134914",11082001,"0")
-TENDEX(8,"133635",11082001,"0")
-TENDEX(8,"131586",11082001,"0")
-TENDEX(8,"131842",11082001,"0")
-TENDEX(8,"133634",11082001,"0")
-TENDEX(8,"134402",11082001,"0")
-TENDEX(8,"144387",11082001,"0")
-TENDEX(8,"147971",11082001,"0")
-TENDEX(8,"196867",11082001,"0")
-TENDEX(8,"70658",11082001,"0")
-TENDEX(8,"67110145",11082001,"0")
-TENDEX(8,"327939",11082001,"0")
-TENDEX(8,"262403",11082001,"0")
-TENDEX(8,"131331",11082001,"0")
-TENDEX(8,"83887361",11082001,"0")
-TENDEX(8,"100664577",11082001,"0")
-TENDEX(8,"117441793",11082001,"0")
-TENDEX(8,"135682",11082001,"0")
-TENDEX(8,"134658",11082001,"0")
-TENDEX(8,"133378",11082001,"0")
-TENDEX(8,"135938",11082001,"0")
-TENDEX(8,"134914",11082001,"0")
-TENDEX(8,"133635",11082001,"0")
-TENDEX(8,"131586",11082001,"0")
-TENDEX(8,"131842",11082001,"0")
-TENDEX(8,"133634",11082001,"0")
-TENDEX(8,"134402",11082001,"0")
-TENDEX(8,"144387",11082001,"0")
-TENDEX(8,"147971",11082001,"0")
-TENDEX(8,"196867",11082001,"0")
-TENDEX(8,"70658",11082001,"0")
-TENDEX(8,"67110145",11082001,"0")
-TENDEX(8,"327939",11082001,"0")
-TENDEX(8,"262403",11082001,"0")
-TENDEX(8,"131331",11082001,"0")
-TENDEX(8,"83887361",11082001,"0")
-TENDEX(8,"100664577",11082001,"0")
-TENDEX(8,"117441793",11082001,"0")
-TENDEX(8," 8241920931592632165",50000,"8241820031592000165")
-TENDEX(8,"131.072",50000,"0")
-TENDEX(8,"67.043.328",50000,"0")
-TENDEX(8,"66.977.792",50000,"0")
-TENDEX(8,"196.608",50000,"0")
-TENDEX(8,"4.128.768",50000,"0")
-TENDEX(8,"2.031.616",50000,"0")
-TENDEX(8,"16.777.216",50000,"0")
-TENDEX(8,"134.218.241",50000,"0")
-TENDEX(8,"65.535",50000,"0")
-BAIT(8,"67,865,722~69,866,014",2000)
-BAIT(8,"117,768,197",50000)
-BAIT(8,"-16,613,685",50000)
-RECOIL(gg.REGION_ANONYMOUS,"1,348,759,109;1,953,067,887;1,634,692,166;1,920,287,604:512","1,634,692,166",10,"0","LESS RECOIL ~ TENDEX")
+gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("1,348,759,109;1,953,067,887;1,634,692,166;1,920,287,604:512", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("1,634,692,166", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  lessrecoil_value0 = gg.getResults(10)
+  gg.editAll("0", gg.TYPE_DWORD)
+  gg.clearResults()
+gg.toast("Less Recoil Aktif Edildi")
 end
 
 if sf==3 then
@@ -395,8 +337,8 @@ end
 function F4()
 br=gg.choice({
 	"📡Anten[Lobi]📡",
-	"🔫No Recoil[Lobi+Oyun]🔫",
-	"🔫Aim Lock[Lobi+Oyun]🔫",
+	"🔫No Recoil[Lobi]🔫",
+	"🔫Aim Lock[Oyun]🔫",
 	"🔫💀Aim Bot 360⁰[Lobi+Oyun]💀🔫",
 	"🎥İpad Menü[Oyun]🎥",
 	"⛳Çimleri Kaldır[Oyun]⛳",
@@ -428,47 +370,31 @@ end
 if br==2 then
 gg.clearResults()
   gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("1,868,784,978;1,850,305,641;28,518;13,212::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("1,850,305,641", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(20)
+  gg.searchNumber("1,348,759,109;1,953,067,887;1,634,692,166;1,920,287,604:512", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("1,634,692,166", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(10)
   gg.editAll("0", gg.TYPE_DWORD)
+  gg.clearResults()
   gg.clearResults()
   gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("1;0;0;1,028,443,341;1,090,519,040;1,036,831,949;1,057,803,469;1,092,091,904;1,097,859,072::33", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("1", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(50)
-  gg.editAll("0", gg.TYPE_DWORD)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_C_DATA)
-  gg.searchNumber("-6.1549454e27;1.8638966e-20;-1.1144502e28;0::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("-1.1144502e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(1)
-  gg.editAll("0", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_C_DATA)
-  gg.searchNumber("-2.8111605e28;-3.7444097e28;-1.1144502e28;128.0::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("-1.1144502e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(1)
-  gg.editAll("0", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.clearResults()
-  gg.setRanges(gg.REGION_C_DATA)
-  gg.searchNumber("-1.2382424e28;-1.4239333e28;-1.1144502e28;-1.8331474e27;-7.1608877e24::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("-1.1144502e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(2)
-  gg.editAll("90", gg.TYPE_FLOAT)
+  gg.setVisible(false)
+  gg.searchNumber("0.2~0.3;53;30;1::", gg.TYPE_FLOAT)
+  gg.setVisible(false)
+  gg.searchNumber("0.2~0.3;1::", gg.TYPE_FLOAT)
+  gg.getResults(200)
+  gg.editAll("1.4012985e-45", gg.TYPE_FLOAT)
   gg.clearResults()
   gg.toast("No Recoil Aktif")
 end
 
 if br==3 then
-gg.clearResults()
-gg.setRanges(gg.REGION_C_DATA | gg.REGION_CODE_APP|gg.REGION_CODE_APP)
-  gg.searchNumber("360;0.0001;1478828288", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("0.0001", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  AIMLOCKOFF1=gg.getResults(100)
-  gg.editAll("9999", gg.TYPE_FLOAT)
-  gg.toast("ᴀɪᴍʟᴏᴄᴋ")
+gg.setRanges(8)
+	gg.clearResults()
+	gg.setRanges(gg.REGION_C_DATA | gg.REGION_CODE_APP)
+	gg.searchNumber("2,015,175,168.0", gg.TYPE_FLOAT)
+	gg.getResults(5)
+	gg.editAll("0", gg.TYPE_FLOAT)
+	gg.clearResults()
 end
 
 if br==4 then
@@ -493,16 +419,28 @@ gg.toast("🎯360° Aimbot")
 end
 
 if br==5 then
+ip=gg.alert("İpad Mod Menu\n⚠️Birtane Seç⚠️","FPP","TPP")
+if ip==1 then
 gg.clearResults()
-karar = {
-{["memory"] = 32},
-{["name"] = "📽"},
-{["value"] = 4715268810984259584, ["type"] = 32},
-{["lv"] = 1130102784, ["offset"] = -24, ["type"] = 32},
-}
-qmxg = {
-{["value"] = 438, ["offset"] = -24, ["type"] = 16},
-}
+gg.setRanges(16384)
+gg.searchNumber("360.0;0.00100000005;-9.38575022e22", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("360.0;0.00100000005", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(2)
+gg.editAll("-1.4235595e-27;254.70928955078", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("IPad Modu Aktif")
+end
+
+if ip==2 then
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.clearResults()
+gg.searchNumber("220;178;15 ", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("220", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(300)
+gg.editAll("350", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("İpad Mod Aktif")
+end
 end
 
 if br==6 then
@@ -589,12 +527,12 @@ end
 function F5()
 birb=gg.choice({
 	"🛡️Anti Shake[Lobi+Oyun]🛡️",
-	"✔️Uzun Atlama[Oyun]✔️",
-	"✨Sihirli Mermi[Oyun]✨",
+	"🚀Uzaya Fırla[Uçak]🚀",
+	"✨Sihirli Mermi[Lobi]✨",
 	"💀Kafadan Vurma %95[Oyun]💀",
 	"➕ Küçük Artı [Oyun]➕",
 	"🔫Tepmeyi Kaldır[Lobi+Oyun]🔫",
-	"🧱Duvar Tırmanma Kapat[Oyun]🧱",
+	"🐇İleri Dogru Zıpla[Oyun]🐇",
 	"✅Hasar Bugunu Çöz [Oyun]✅",
 	"🔫100m Aim Bot[Lobi+Oyun]🔫",
 	"🔫Duvar Arkası Vurma[Oyun]🔫",
@@ -615,25 +553,11 @@ gg.clearResults()
 end
 
 if birb==2 then
-gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("7.0064923e-45F;0.6~1;1065353216D;100F;1065353216D;2500000000F;0.10000000149F;88F::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("7.0064923e-45F;0.6~1;1065353216D;100F;1065353216D;2500000000F;0.10000000149F;88F::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.refineNumber("0.6~1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.refineNumber("0.6~1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(2500)
-gg.editAll("3.5241295", gg.TYPE_FLOAT)
-gg.editAll("3.5241295", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.searchNumber("300;0;0.05000000075;2;25::17", gg.TYPE_FLOAT, false)
-gg.searchNumber("300;0;0.05000000075;2;25::17", gg.TYPE_FLOAT, false)
-gg.refineNumber("0.05000000075", gg.TYPE_FLOAT, false)
-gg.refineNumber("0.05000000075", gg.TYPE_FLOAT, false)
-gg.getResults(2400)
-gg.editAll("2.1241295", gg.TYPE_FLOAT)
-gg.editAll("2.1241295", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.toast("Uzun Atlama Aktif")
+gg.searchNumber("1024;3000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults("100")
+gg.editAll("9999999", gg.TYPE_FLOAT)
+gg.toast("Lan Biz Niye Yükseliyoz?")
 end
 
 if birb==3 then
@@ -645,31 +569,65 @@ mg=gg.alert(
 
 if mg==1 then
 gg.clearResults()
-gg.searchNumber("69.5;35;33", 16, false, 536870912, 0, -1)
-gg.getResults(6)
-gg.editAll("160;140;230", 16)
-gg.clearResults()
+  gg.setRanges(32)
+  gg.searchNumber("90.4850692749F;16", 16, false, 536870912, 0, -1)
+  gg.searchNumber("16", 16, false, 536870912, 0, -1)
+  magicvalue0 = gg.getResults(20)
+  gg.editAll("99", 16)
+  gg.clearResults()
+  gg.searchNumber("9.20161819458;23;25;30.5", 16, false, 536870912, 0, -1)
+  gg.getResultsCount()
+  gg.searchNumber("25;30.5", 16, false, 536870912, 0, -1)
+  magicvalue1 = gg.getResults(10)
+  gg.editAll("240", 16)
+  gg.toast("✨Sihirli Mermi Aktif Edildi")
 end
 
 
 if mg==2 then
 gg.clearResults()
-gg.searchNumber("69.5;35;33", 16, false, 536870912, 0, -1)
-gg.getResults(6)
-gg.editAll("330;290;470", 16)
-gg.clearResults()
+  gg.setRanges(32)
+  gg.searchNumber("90.4850692749F;16", 16, false, 536870912, 0, -1)
+  gg.searchNumber("16", 16, false, 536870912, 0, -1)
+  magicvalue0 = gg.getResults(20)
+  gg.editAll("198", 16)
+  gg.clearResults()
+  gg.searchNumber("9.20161819458;23;25;30.5", 16, false, 536870912, 0, -1)
+  gg.getResultsCount()
+  gg.searchNumber("25;30.5", 16, false, 536870912, 0, -1)
+  magicvalue1 = gg.getResults(10)
+  gg.editAll("480", 16)
+  gg.toast("✨Sihirli Mermi Aktif Edildi")
 end
 end
 
 
 
 if birb==4 then
-gg.clearResults()
-gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(100)
-gg.editAll("600;610", gg.TYPE_FLOAT)
-gg.clearResults()
+gg["clearResults"]()
+gg["setRanges"](gg["REGION_BAD"])
+gg["searchNumber"]("-88.66608428955;26:512", gg["TYPE_FLOAT"], false, gg["SIGN_EQUAL"], 0, -1)
+gg["searchNumber"]("26", gg["TYPE_FLOAT"], false, gg["SIGN_EQUAL"], 0, -1)
+gg["getResults"](2)
+gg["editAll"]("-460", gg["TYPE_FLOAT"])
+gg["clearResults"]()
+gg["searchNumber"]("-88.73961639404;28:512", gg["TYPE_FLOAT"], false, gg["SIGN_EQUAL"], 0, -1)
+gg["searchNumber"]("28", gg["TYPE_FLOAT"], false, gg["SIGN_EQUAL"], 0, -1)
+gg["getResults"](2)
+gg["editAll"]("-560", gg["TYPE_FLOAT"])
+gg["clearResults"]()
+gg["setRanges"](gg["REGION_ANONYMOUS"])
+gg["searchNumber"]("9.201618;30.5;25", gg["TYPE_FLOAT"], false, gg["SIGN_EQUAL"], 0, -1)
+gg["searchNumber"]("25;30.5", gg["TYPE_FLOAT"], false, gg["SIGN_EQUAL"], 0, -1)
+gg["getResults"](10)
+gg["editAll"]("99999", gg["TYPE_FLOAT"])
+gg["clearResults"]()
+gg["setRanges"](gg["REGION_C_DATA"] | gg["REGION_CODE_APP"])
+gg["searchNumber"]("-298284466;-1.304566e23F", gg["TYPE_DWORD"], false, gg["SIGN_EQUAL"], 0, -1)
+gg["searchNumber"]("-298284466", gg["TYPE_DWORD"], false, gg["SIGN_EQUAL"], 0, -1)
+gg["getResults"](99)
+gg["editAll"]("0", gg["TYPE_DWORD"])
+gg["clearResults"]()
 end
 
 if birb==5 then
@@ -684,46 +642,33 @@ end
 
 if birb==6 then
 gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("1,868,784,978;1,850,305,641;28,518;13,212::13", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("1,850,305,641", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(20)
-  gg.editAll("0", gg.TYPE_DWORD)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("1;0;0;1,028,443,341;1,090,519,040;1,036,831,949;1,057,803,469;1,092,091,904;1,097,859,072::33", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("1", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(50)
-  gg.editAll("0", gg.TYPE_DWORD)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_C_DATA)
-  gg.searchNumber("-6.1549454e27;1.8638966e-20;-1.1144502e28;0::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("-1.1144502e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(1)
-  gg.editAll("0", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.setRanges(gg.REGION_C_DATA)
-  gg.searchNumber("-2.8111605e28;-3.7444097e28;-1.1144502e28;128.0::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.refineNumber("-1.1144502e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(1)
-  gg.editAll("0", gg.TYPE_FLOAT)
-  gg.clearResults()
-  gg.clearResults()
-  gg.setRanges(gg.REGION_C_DATA)
-  gg.searchNumber("-1.2382424e28;-1.4239333e28;-1.1144502e28;-1.8331474e27;-7.1608877e24::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("-1.1144502e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-  gg.getResults(2)
-  gg.editAll("90", gg.TYPE_FLOAT)
-  gg.clearResults()
+	gg.setRanges(gg.REGION_ANONYMOUS)
+	gg.searchNumber("2D;256D;256D;0.96666663885117;256D", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+	gg.searchNumber("0.96666663885117", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+	gg.getResults(3)
+	gg.editAll("999.9949", gg.TYPE_FLOAT)
+	gg.clearResults()
+	gg.searchNumber("3.20000004768;1.09375", 16, false, 536870912, 0, -1)
+	gg.searchNumber("3.20000004768;1.09375", 16, false, 536870912, 0, -1)
+	gg.getResults(100)
+	gg.editAll("0", 16)
+	gg.toast("Dostum Sanki Yanımdan Birileri geçiyor?")
 end
 
 if birb==7 then
 gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("4,890,205,508,990,664,704", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
-  WALLJUMPOFF=gg.getResults(100)
-  gg.editAll("4,890,205,509,012,684,800", gg.TYPE_QWORD)
-  gg.toast("Duvar Tırmanma Kapat")
+	gg.setRanges(gg.REGION_ANONYMOUS)
+	gg.searchNumber("7.0064923e-45F;0.6~1;1065353216D;100F;1065353216D;2500000000F;0.10000000149F;88F::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+	gg.refineNumber("0.6~1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+	frontjump_value0 = gg.getResults(2500)
+	gg.editAll("3.5241295", gg.TYPE_FLOAT)
+	gg.clearResults()
+	gg.searchNumber("300;0;0.05000000075;2;25::17", gg.TYPE_FLOAT, false)
+	gg.refineNumber("0.05000000075", gg.TYPE_FLOAT, false)
+	frontjump_value1 = gg.getResults(2400)
+	gg.editAll("2.1241295", gg.TYPE_FLOAT)
+	gg.clearResults()
+	gg.toast("Tavşan Reis")
 end
 
 
@@ -742,40 +687,25 @@ gg.clearResults()
 end
  
 if birb==9 then
-gg.clearResults()
-	gg.setRanges(gg.REGION_C_DATA)
-	gg.searchNumber("2046820354;-336587221:9", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-	gg.searchNumber("2046820354", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-	gg.getResults(100)
-	gg.editAll("2046820353", gg.TYPE_DWORD)
+gg.setRanges(8)
 	gg.clearResults()
-	gg.setRanges(gg.REGION_C_DATA)
-	gg.searchNumber("2015175168", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-	gg.getResults(6)
+	gg.setRanges(gg.REGION_C_DATA | gg.REGION_CODE_APP)
+	gg.searchNumber("2,015,175,168.0", gg.TYPE_FLOAT)
+	aimbot100value0 = gg.getResults(5)
 	gg.editAll("0", gg.TYPE_FLOAT)
 	gg.clearResults()
 	gg.toast("🎯100m Aim Bot Aktif🎯")
 end
 
 if birb==10 then
-gg.clearResults()
-    gg.setRanges(gg.REGION_ANONYMOUS)
-    gg.searchNumber("90.775703430176;0;8;15;16;18;28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-    gg.searchNumber("28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-    gg.getResults(10)
-    gg.editAll("1000", gg.TYPE_FLOAT)
-    gg.clearResults()
-    gg.searchNumber("90.775703430176;8;27.25;18;16", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-    gg.searchNumber("18", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-    gg.getResults(100)
-    gg.editAll("140", gg.TYPE_FLOAT)
-    gg.clearResults()
-    gg.setRanges(gg.REGION_C_BSS)
-    gg.searchNumber("1.0e-7;1.0e-7;2;2;1::512", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-    gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-    gg.getResults(20)
-    gg.editAll("0", gg.TYPE_FLOAT)
-	gg.toast("Duvar Arkası Vurma Aktif")
+gg.setRanges(gg.REGION_C_BSS)
+  gg.clearResults()
+  gg.searchNumber("869,711,765D;2;1::55", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  wallshot_value0 = gg.getResults(2)
+  gg.editAll("-10", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.toast("Duvardan Vurma")
 end
 
 if birb==11 then
