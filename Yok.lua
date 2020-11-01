@@ -1,5 +1,5 @@
 function asd()
-if os.date("%Y%m%d") > '20201028' then
+if os.date("%Y%m%d") > '20201128' then
  a = io.open("/storage/emulated/0/dropped.xml", "r")
 if not a then
 gg.alert("⚠️Lisans Bulunamadı⚠️")
@@ -1432,7 +1432,7 @@ cbd=gg.choice({
 	},nil,"Giriş Peneli")
 	
 if cbd==1 then
-VUNuTsSerEDbkRUFMaYG = '20201110'
+VUNuTsSerEDbkRUFMaYG = '20201128'
 Password﻿ = 'VUNuTsSerEDbkRUFMaYG'
 PS = gg.prompt({'✅Giriş Paneli✅'},{[1]=''},{[1]='text'})
 if not PS the﻿n os.exit() 
@@ -1455,7 +1455,7 @@ end
 end
 
 function bedava()
-SnLcYSbBBaTvqtkabKhiy = '20201105'
+SnLcYSbBBaTvqtkabKhiy = '20201128'
 if os.date("%Y%m%d") > SnLcYSbBBaTvqtkabKhiy then
   hh = gg.alert("⛔Script Süreniz Dolmuştur⛔")
   os.exit()
