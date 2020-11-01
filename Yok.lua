@@ -70,102 +70,776 @@ saf=gg.choice({
 if saf==1 then
 --Anti Ban Online
 gg.clearResults()
-gg.searchNumber("99999999", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(1)
-gg.editAll("1970037078", gg.TYPE_DWORD)
-gg.clearResults()
-gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("135682;144387", gg.TYPE_DWORD)
-gg.refineNumber("135682", gg.TYPE_DWORD)
-gg.getResults(1000000)
-gg.editAll("0", gg.TYPE_DWORD)
-gg.clearResults()
-gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("134658;131586", gg.TYPE_DWORD)
-gg.refineNumber("134658", gg.TYPE_DWORD)
-gg.getResults(1000000)
-gg.editAll("0", gg.TYPE_DWORD)
-gg.clearResults()
-gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("134914;262403", gg.TYPE_DWORD)
-gg.refineNumber("134914", gg.TYPE_DWORD)
-gg.getResults(1000000)
-gg.editAll("0", gg.TYPE_DWORD)
-gg.clearResults()
-gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("133378;262403", gg.TYPE_DWORD)
-gg.refineNumber("133378", gg.TYPE_DWORD)
-gg.getResults(1000000)
-gg.editAll("0", gg.TYPE_DWORD)
-gg.clearResults()
-gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("131330;133634", gg.TYPE_DWORD)
-gg.refineNumber("131330", gg.TYPE_DWORD)
-gg.getResults(1000000)
-gg.editAll("0", gg.TYPE_DWORD)
-gg.clearResults()
-gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("131842;132098", gg.TYPE_DWORD)
-gg.refineNumber("131842", gg.TYPE_DWORD)
-gg.getResults(1000000)
-gg.editAll("0", gg.TYPE_DWORD)
-gg.clearResults()
-gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("132098", gg.TYPE_DWORD)
-gg.getResults(1000000)
-gg.editAll("0", gg.TYPE_DWORD)
-gg.clearResults()
-gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("16610;8388646;8388805", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(50)
-gg.editAll("30", gg.TYPE_DWORD)
-gg.clearResults()
-gg.searchNumber("257D;0~99999F;1D;0D::300", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResultsCount()
-gg.searchNumber("0~9999", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(100)
-gg.clearResults()
-gg.clearResults()
-gg.setRanges(gg.REGION_C_DATA | gg.REGION_CODE_APP)
-gg.searchNumber("-476053504;-349478012:189", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("-476053504", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(100)
-gg.editAll("-476053503;-476053504", gg.TYPE_DWORD)
-gg.clearResults()
-gg.setRanges(gg.REGION_CODE_APP)
-gg.searchNumber("-511703038;-336586961:29", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("-511703038", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(2)
-gg.editAll("-476053504", gg.TYPE_DWORD)
-gg.clearResults()
-gg.setRanges(gg.REGION_C_DATA | gg.REGION_CODE_APP)
-gg.searchNumber("2015175168", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(6)
-gg.editAll("0", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.setRanges(gg.REGION_CODE_APP)
-gg.searchNumber("1.6615354e35;-5.8048945e26:9", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("1.6615354e35", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(6)
-gg.editAll("1.6615351e35", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.setRanges(gg.REGION_C_DATA | gg.REGION_CODE_APP)
-gg.searchNumber("-476053504;-349478012:189", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("-476053504", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(100)
-gg.editAll("-476053503;-476053504", gg.TYPE_DWORD)
-gg.clearResults()
-gg.setRanges(gg.REGION_CODE_APP)
-gg.searchNumber("-511703038;-336586961:29", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("-511703038", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(2)
-gg.editAll("-476053504", gg.TYPE_DWORD)
-gg.clearResults()
-gg.setRanges(gg.REGION_C_DATA | gg.REGION_CODE_APP)
-gg.searchNumber("2015175168", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(6)
-gg.editAll("0", gg.TYPE_FLOAT)
-gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("2.2958874e-41;16384D;16384D;16384D;16384D;16384D::24", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  if gg.getResultCount() == 0 then
+    gg.processKill()
+  else
+    gg.searchNumber("2.2958874e-41", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    n = gg.getResultCount()
+    jz = gg.getResults(n)
+    do
+      for i = 1, n do
+        gg.addListItems({
+          [1] = {
+            address = jz[i].address - 252,
+            flags = 4,
+            freeze = true,
+            value = 70086
+          }
+        })
+        gg.addListItems({
+          [1] = {
+            address = jz[i].address - 236,
+            flags = 4,
+            freeze = true,
+            value = 70086
+          }
+        })
+        gg.addListItems({
+          [1] = {
+            address = jz[i].address - 232,
+            flags = 4,
+            freeze = true,
+            value = 70086
+          }
+        })
+        gg.addListItems({
+          [1] = {
+            address = jz[i].address - 72,
+            flags = 4,
+            freeze = true,
+            value = 70086
+          }
+        })
+        gg.addListItems({
+          [1] = {
+            address = jz[i].address - 68,
+            flags = 4,
+            freeze = true,
+            value = 70086
+          }
+        })
+        gg.addListItems({
+          [1] = {
+            address = jz[i].address - 64,
+            flags = 4,
+            freeze = true,
+            value = 70086
+          }
+        })
+        gg.addListItems({
+          [1] = {
+            address = jz[i].address + 30,
+            flags = 4,
+            freeze = true,
+            value = 119
+          }
+        })
+        gg.addListItems({
+          [1] = {
+            address = jz[i].address + 130,
+            flags = 4,
+            freeze = true,
+            value = 70086
+          }
+        })
+        gg.addListItems({
+          [1] = {
+            address = jz[i].address + 180,
+            flags = 4,
+            freeze = true,
+            value = 70086
+          }
+        })
+        gg.addListItems({
+          [1] = {
+            address = jz[i].address + 200,
+            flags = 4,
+            freeze = true,
+            value = 4451
+          }
+        })
+        gg.addListItems({
+          [1] = {
+            address = jz[i].address + 300,
+            flags = 4,
+            freeze = true,
+            value = 0
+          }
+        })
+        gg.addListItems({
+          [1] = {
+            address = jz[i].address + 310,
+            flags = 4,
+            freeze = true,
+            value = 70086
+          }
+        })
+        gg.addListItems({
+          [1] = {
+            address = jz[i].address + 360,
+            flags = 4,
+            freeze = true,
+            value = 70086
+          }
+        })
+        gg.addListItems({
+          [1] = {
+            address = jz[i].address + 450,
+            flags = 4,
+            freeze = true,
+            value = 70086
+          }
+        })
+        gg.addListItems({
+          [1] = {
+            address = jz[i].address + 650,
+            flags = 4,
+            freeze = true,
+            value = 70086
+          }
+        })
+        gg.addListItems({
+          [1] = {
+            address = jz[i].address + 800,
+            flags = 4,
+            freeze = true,
+            value = 70086
+          }
+        })
+      end
+    end
+  end
+  gg.clearResults()
+  gg.clearList()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("144387", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineNumber("144387", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineNumber("144387", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineNumber("144387", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(50000)
+  gg.setVisible(false)
+  gg.editAll("0", gg.TYPE_DWORD)
+  gg.setVisible(false)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("196864", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResultsCount()
+  gg.searchNumber("196864", gg.TYPE_DWORD)
+  gg.getResultsCount()
+  gg.getResults(3)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("6,815,758", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResultsCount()
+  gg.clearResults()
+  gg.setVisible(false)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("2.2958874e-41;16384D;16384D;16384D;16384D;16384D::24", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResultsCount()
+  gg.searchNumber("2.2958874e-41", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResultsCount()
+  gg.getResults(1)
+  gg.addListItems({
+    [1] = {
+      address = 2949224500,
+      flags = 4,
+      freeze = true,
+      value = 70086
+    }
+  })
+  gg.addListItems({
+    [1] = {
+      address = 2949224516,
+      flags = 4,
+      freeze = true,
+      value = 70086
+    }
+  })
+  gg.addListItems({
+    [1] = {
+      address = 2949224520,
+      flags = 4,
+      freeze = true,
+      value = 70086
+    }
+  })
+  gg.addListItems({
+    [1] = {
+      address = 2949224680,
+      flags = 4,
+      freeze = true,
+      value = 70086
+    }
+  })
+  gg.addListItems({
+    [1] = {
+      address = 2949224684,
+      flags = 4,
+      freeze = true,
+      value = 70086
+    }
+  })
+  gg.addListItems({
+    [1] = {
+      address = 2949224688,
+      flags = 4,
+      freeze = true,
+      value = 70086
+    }
+  })
+  gg.addListItems({
+    [1] = {
+      address = 2949224782,
+      flags = 4,
+      freeze = true,
+      value = 119
+    }
+  })
+  gg.addListItems({
+    [1] = {
+      address = 2949224882,
+      flags = 4,
+      freeze = true,
+      value = 70086
+    }
+  })
+  gg.addListItems({
+    [1] = {
+      address = 2949224932,
+      flags = 4,
+      freeze = true,
+      value = 70086
+    }
+  })
+  gg.addListItems({
+    [1] = {
+      address = 2949224952,
+      flags = 4,
+      freeze = true,
+      value = 4451
+    }
+  })
+  gg.addListItems({
+    [1] = {
+      address = 2949225052,
+      flags = 4,
+      freeze = true,
+      value = 0
+    }
+  })
+  gg.addListItems({
+    [1] = {
+      address = 2949225062,
+      flags = 4,
+      freeze = true,
+      value = 70086
+    }
+  })
+  gg.addListItems({
+    [1] = {
+      address = 2949225112,
+      flags = 4,
+      freeze = true,
+      value = 70086
+    }
+  })
+  gg.addListItems({
+    [1] = {
+      address = 2949225202,
+      flags = 4,
+      freeze = true,
+      value = 70086
+    }
+  })
+  gg.addListItems({
+    [1] = {
+      address = 2949225402,
+      flags = 4,
+      freeze = true,
+      value = 70086
+    }
+  })
+  gg.addListItems({
+    [1] = {
+      address = 2949225552,
+      flags = 4,
+      freeze = true,
+      value = 70086
+    }
+  })
+  gg.clearList()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("135682;144387", gg.TYPE_DWORD)
+  gg.refineNumber("135682", gg.TYPE_DWORD)
+  gg.getResults(50000)
+  gg.editAll("0", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("134658;131586", gg.TYPE_DWORD)
+  gg.refineNumber("134658", gg.TYPE_DWORD)
+  gg.getResults(50000)
+  gg.editAll("0", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("4096;135682", gg.TYPE_DWORD)
+  gg.refineNumber("4096", gg.TYPE_DWORD)
+  gg.getResults(50000)
+  gg.editAll("0", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("157567", gg.TYPE_DWORD)
+  gg.getResults(50000)
+  gg.editAll("0", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("135938", gg.TYPE_DWORD)
+  gg.getResults(50000)
+  gg.editAll("0", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("135170", gg.TYPE_DWORD)
+  gg.getResults(50000)
+  gg.editAll("0", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("135426", gg.TYPE_DWORD)
+  gg.getResults(50000)
+  gg.editAll("0", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("135212", gg.TYPE_DWORD)
+  gg.getResults(50000)
+  gg.editAll("0", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("134914;262403", gg.TYPE_DWORD)
+  gg.refineNumber("134914", gg.TYPE_DWORD)
+  gg.getResults(50000)
+  gg.editAll("0", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("133378;262403", gg.TYPE_DWORD)
+  gg.refineNumber("133378", gg.TYPE_DWORD)
+  gg.getResults(50000)
+  gg.editAll("0", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("131330;133634", gg.TYPE_DWORD)
+  gg.refineNumber("131330", gg.TYPE_DWORD)
+  gg.getResults(50000)
+  gg.editAll("0", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("131842;132098", gg.TYPE_DWORD)
+  gg.refineNumber("131842", gg.TYPE_DWORD)
+  gg.getResults(50000)
+  gg.editAll("0", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("133634", gg.TYPE_DWORD)
+  gg.getResults(50000)
+  gg.editAll("0", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("131331", gg.TYPE_DWORD)
+  gg.getResults(50000)
+  gg.editAll("0", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("132098", gg.TYPE_DWORD)
+  gg.getResults(50000)
+  gg.editAll("0", gg.TYPE_DWORD)
+  gg.clearResults()gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("2.2958874e-41;16384D;16384D;16384D;16384D;16384D::24", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  if gg.getResultCount() == 0 then
+    gg.processKill()
+  else
+    gg.searchNumber("2.2958874e-41", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    n = gg.getResultCount()
+    jz = gg.getResults(n)
+    do
+      for i = 1, n do
+        gg.addListItems({
+          [1] = {
+            address = jz[i].address - 252,
+            flags = 4,
+            freeze = true,
+            value = 70086
+          }
+        })
+        gg.addListItems({
+          [1] = {
+            address = jz[i].address - 236,
+            flags = 4,
+            freeze = true,
+            value = 70086
+          }
+        })
+        gg.addListItems({
+          [1] = {
+            address = jz[i].address - 232,
+            flags = 4,
+            freeze = true,
+            value = 70086
+          }
+        })
+        gg.addListItems({
+          [1] = {
+            address = jz[i].address - 72,
+            flags = 4,
+            freeze = true,
+            value = 70086
+          }
+        })
+        gg.addListItems({
+          [1] = {
+            address = jz[i].address - 68,
+            flags = 4,
+            freeze = true,
+            value = 70086
+          }
+        })
+        gg.addListItems({
+          [1] = {
+            address = jz[i].address - 64,
+            flags = 4,
+            freeze = true,
+            value = 70086
+          }
+        })
+        gg.addListItems({
+          [1] = {
+            address = jz[i].address + 30,
+            flags = 4,
+            freeze = true,
+            value = 119
+          }
+        })
+        gg.addListItems({
+          [1] = {
+            address = jz[i].address + 130,
+            flags = 4,
+            freeze = true,
+            value = 70086
+          }
+        })
+        gg.addListItems({
+          [1] = {
+            address = jz[i].address + 180,
+            flags = 4,
+            freeze = true,
+            value = 70086
+          }
+        })
+        gg.addListItems({
+          [1] = {
+            address = jz[i].address + 200,
+            flags = 4,
+            freeze = true,
+            value = 4451
+          }
+        })
+        gg.addListItems({
+          [1] = {
+            address = jz[i].address + 300,
+            flags = 4,
+            freeze = true,
+            value = 0
+          }
+        })
+        gg.addListItems({
+          [1] = {
+            address = jz[i].address + 310,
+            flags = 4,
+            freeze = true,
+            value = 70086
+          }
+        })
+        gg.addListItems({
+          [1] = {
+            address = jz[i].address + 360,
+            flags = 4,
+            freeze = true,
+            value = 70086
+          }
+        })
+        gg.addListItems({
+          [1] = {
+            address = jz[i].address + 450,
+            flags = 4,
+            freeze = true,
+            value = 70086
+          }
+        })
+        gg.addListItems({
+          [1] = {
+            address = jz[i].address + 650,
+            flags = 4,
+            freeze = true,
+            value = 70086
+          }
+        })
+        gg.addListItems({
+          [1] = {
+            address = jz[i].address + 800,
+            flags = 4,
+            freeze = true,
+            value = 70086
+          }
+        })
+      end
+    end
+  end
+  gg.clearResults()
+  gg.clearList()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("144387", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineNumber("144387", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineNumber("144387", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineNumber("144387", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(50000)
+  gg.setVisible(false)
+  gg.editAll("0", gg.TYPE_DWORD)
+  gg.setVisible(false)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("196864", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResultsCount()
+  gg.searchNumber("196864", gg.TYPE_DWORD)
+  gg.getResultsCount()
+  gg.getResults(3)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("6,815,758", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResultsCount()
+  gg.clearResults()
+  gg.setVisible(false)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("2.2958874e-41;16384D;16384D;16384D;16384D;16384D::24", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResultsCount()
+  gg.searchNumber("2.2958874e-41", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResultsCount()
+  gg.getResults(1)
+  gg.addListItems({
+    [1] = {
+      address = 2949224500,
+      flags = 4,
+      freeze = true,
+      value = 70086
+    }
+  })
+  gg.addListItems({
+    [1] = {
+      address = 2949224516,
+      flags = 4,
+      freeze = true,
+      value = 70086
+    }
+  })
+  gg.addListItems({
+    [1] = {
+      address = 2949224520,
+      flags = 4,
+      freeze = true,
+      value = 70086
+    }
+  })
+  gg.addListItems({
+    [1] = {
+      address = 2949224680,
+      flags = 4,
+      freeze = true,
+      value = 70086
+    }
+  })
+  gg.addListItems({
+    [1] = {
+      address = 2949224684,
+      flags = 4,
+      freeze = true,
+      value = 70086
+    }
+  })
+  gg.addListItems({
+    [1] = {
+      address = 2949224688,
+      flags = 4,
+      freeze = true,
+      value = 70086
+    }
+  })
+  gg.addListItems({
+    [1] = {
+      address = 2949224782,
+      flags = 4,
+      freeze = true,
+      value = 119
+    }
+  })
+  gg.addListItems({
+    [1] = {
+      address = 2949224882,
+      flags = 4,
+      freeze = true,
+      value = 70086
+    }
+  })
+  gg.addListItems({
+    [1] = {
+      address = 2949224932,
+      flags = 4,
+      freeze = true,
+      value = 70086
+    }
+  })
+  gg.addListItems({
+    [1] = {
+      address = 2949224952,
+      flags = 4,
+      freeze = true,
+      value = 4451
+    }
+  })
+  gg.addListItems({
+    [1] = {
+      address = 2949225052,
+      flags = 4,
+      freeze = true,
+      value = 0
+    }
+  })
+  gg.addListItems({
+    [1] = {
+      address = 2949225062,
+      flags = 4,
+      freeze = true,
+      value = 70086
+    }
+  })
+  gg.addListItems({
+    [1] = {
+      address = 2949225112,
+      flags = 4,
+      freeze = true,
+      value = 70086
+    }
+  })
+  gg.addListItems({
+    [1] = {
+      address = 2949225202,
+      flags = 4,
+      freeze = true,
+      value = 70086
+    }
+  })
+  gg.addListItems({
+    [1] = {
+      address = 2949225402,
+      flags = 4,
+      freeze = true,
+      value = 70086
+    }
+  })
+  gg.addListItems({
+    [1] = {
+      address = 2949225552,
+      flags = 4,
+      freeze = true,
+      value = 70086
+    }
+  })
+  gg.clearList()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("135682;144387", gg.TYPE_DWORD)
+  gg.refineNumber("135682", gg.TYPE_DWORD)
+  gg.getResults(50000)
+  gg.editAll("0", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("134658;131586", gg.TYPE_DWORD)
+  gg.refineNumber("134658", gg.TYPE_DWORD)
+  gg.getResults(50000)
+  gg.editAll("0", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("4096;135682", gg.TYPE_DWORD)
+  gg.refineNumber("4096", gg.TYPE_DWORD)
+  gg.getResults(50000)
+  gg.editAll("0", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("157567", gg.TYPE_DWORD)
+  gg.getResults(50000)
+  gg.editAll("0", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("135938", gg.TYPE_DWORD)
+  gg.getResults(50000)
+  gg.editAll("0", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("135170", gg.TYPE_DWORD)
+  gg.getResults(50000)
+  gg.editAll("0", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("135426", gg.TYPE_DWORD)
+  gg.getResults(50000)
+  gg.editAll("0", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("135212", gg.TYPE_DWORD)
+  gg.getResults(50000)
+  gg.editAll("0", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("134914;262403", gg.TYPE_DWORD)
+  gg.refineNumber("134914", gg.TYPE_DWORD)
+  gg.getResults(50000)
+  gg.editAll("0", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("133378;262403", gg.TYPE_DWORD)
+  gg.refineNumber("133378", gg.TYPE_DWORD)
+  gg.getResults(50000)
+  gg.editAll("0", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("131330;133634", gg.TYPE_DWORD)
+  gg.refineNumber("131330", gg.TYPE_DWORD)
+  gg.getResults(50000)
+  gg.editAll("0", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("131842;132098", gg.TYPE_DWORD)
+  gg.refineNumber("131842", gg.TYPE_DWORD)
+  gg.getResults(50000)
+  gg.editAll("0", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("133634", gg.TYPE_DWORD)
+  gg.getResults(50000)
+  gg.editAll("0", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("131331", gg.TYPE_DWORD)
+  gg.getResults(50000)
+  gg.editAll("0", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("132098", gg.TYPE_DWORD)
+  gg.getResults(50000)
+  gg.editAll("0", gg.TYPE_DWORD)
+  gg.clearResults()
 gg.alert("🛡️𝐅𝐨𝐫𝐰𝐚𝐫𝐝 𝐇𝐚𝐜𝐤 𝐓𝐞𝐚𝐦 𝐀𝐧𝐭𝐢 𝐁𝐚𝐧🛡️")
 end
 
@@ -726,7 +1400,7 @@ end
 
 function F8()
 xxx=os.date("%d")
-yyy='28'
+yyy='05'
 gg.alert(yyy-xxx)
 HOME()
 end
@@ -781,7 +1455,7 @@ end
 end
 
 function bedava()
-SnLcYSbBBaTvqtkabKhiy = '20201028'
+SnLcYSbBBaTvqtkabKhiy = '20201105'
 if os.date("%Y%m%d") > SnLcYSbBBaTvqtkabKhiy then
   hh = gg.alert("⛔Script Süreniz Dolmuştur⛔")
   os.exit()
@@ -794,28 +1468,6 @@ os.exit()
 end
 
 --Script Başlangıç Yeri
-a = io.open("/storage/emulated/0/dropped.xml", "r")
-if not a then
-gg.alert([[
-✧═══════•❁❀❁•═══════✧
-             ⚠️Bilgilendirme⚠️                        
-✧═══════•❁❀❁•═══════✧
- Sevgili Forward Hack Kullanıcısı,
- Ban Dalgası Aktif Olduğu İçin
- Script Erişimini Kapattık!
- Ban Dalgası Bittiği Zmn Hile Test
- edilip Yeniden Kullanılışa
- açılacaktır.
- Anlayışınız İçin Teşekkür Ederiz.
- 
- @ForwardHackAlfa
- Noob Developer.
- ]])
-os.exit()
-else
-a = a:read("*a")
-end
-gg.toast("Yetkili Girişi Algılandı!")
 
 i="Güncelleme Durumu: Bakım Var"
 
