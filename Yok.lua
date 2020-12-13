@@ -418,7 +418,7 @@ end
 
 --Script Başlangıç Yeri
 
-i="Güncelleme Durumu: Bakım Var"
+i="Güncelleme Durumu: Hile Aktif"
 
 
 otu=gg.choice({
