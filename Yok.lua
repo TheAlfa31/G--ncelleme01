@@ -374,6 +374,7 @@ if not PS the﻿n os.exit()
 end 
 if PS[1] == Password then 
 gg.toast('Key Doğrulandı')
+gg.alert("❤️Hoş Geldiniz Efendim❤️")
 else 
 gg.alert('Geçersiz Anahtar\nAnahtar @AHTTRR de paylaşıldı') os.exit() end
 
