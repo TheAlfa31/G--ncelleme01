@@ -376,7 +376,7 @@ if PS[1] == Password then
 gg.toast('Key Doğrulandı')
 gg.alert("❤️Hoş Geldiniz Efendim❤️")
 else 
-gg.alert('Geçersiz Anahtar\nAnahtar @AHTTRR de paylaşıldı') os.exit() end
+gg.alert('Geçersiz Anahtar\nAnahtar Görevli Değilsin') os.exit() end
 
 if os.date("%Y%m%d") > VUNuTsSerEDbkRUFMaYG then
   hh = gg.alert("⛔ Key Süreniz Dolmuştur ⛔")
