@@ -96,7 +96,7 @@ function F2()
 sf=gg.choice({
 	"📡Anten [Lobi+Oyun]📡"..anten_checker,
 	"🔫Less Recoil [Oyun]🔫"..less_checker,
-	"💀%50 Kafadan Vurma[Oyun]💀",
+	"💀%50 Kafadan Vurma[Oyun]💀"..elli_kafadanchecker,
 	"🎥Ipad Mod[Oyun]🎥",
 	"🔙Geri🔙"
 	},nil,"🛡️Hile Menü🛡️")
@@ -141,6 +141,8 @@ gg.clearResults()
   gg.clearResults()
 gg.toast("Less Recoil")
 else
+if less_checker == on then
+less_checker = off
 gg.setValues(lessrecoil)
 gg.toast("Less Recoil Devre Dışı")
 end
@@ -187,6 +189,7 @@ end
 
 if sf==5 then
 HOME()
+end
 end
 
 function F3()
