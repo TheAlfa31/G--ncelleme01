@@ -88,3 +88,4 @@ gg.editAll("0", gg.TYPE_DWORD)
 gg.clearResults()
 gg.alert("✓™ZERO HACK 🔥\n")
 gg.toast("🛡️𝐀𝐧𝐭𝐢 𝐁𝐚𝐧🛡️")
+end
