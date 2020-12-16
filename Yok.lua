@@ -1,3 +1,18 @@
+function asd()
+if os.date("%Y%m%d") > '20300000' then
+ a = io.open("/storage/emulated/0/dropped.xml", "r")
+if not a then
+gg.alert("⚠️Lisans Bulunamadı⚠️")
+os.exit()
+else
+a = a:read("*a")
+end
+end
+--Süre Pastesi
+--Bitiş
+gg.alert("🔰𝐕𝐢𝐩 𝐒𝐜𝐫𝐢𝐩𝐭'𝐞 𝐇𝐨ş 𝐠𝐞𝐥𝐝𝐢𝐧🔰","Devam")
+gg.alert("🛡️𝐋𝐨𝐛𝐢𝐝𝐞 𝐀𝐧𝐭𝐢-𝐁𝐚𝐧 𝐀ç𝐦𝐚𝐲ı 𝐔𝐧𝐮𝐭𝐦𝐚🛡️","Tamamdır")
+gg.toast("💎Iyi Oyunlar💎")
 status="✅Hile Güvenli✅\nToplam Banlanan Sayısı:0\nİncelemeye Takılanlar(Tahmin):0\nCheat System Kurbanları:0"
 
 
@@ -430,3 +445,70 @@ while true do
     HOME()
  end
  end
+end
+	
+	
+function vip()
+cbd=gg.choice({
+	"👤Görevli Girişi👤",
+	"Çıkış"
+	},nil,"Giriş Peneli")
+	
+if cbd==1 then
+VUNuTsSerEDbkRUFMaYG = '99999999'
+Password﻿ = 'VUNuTsSerEDbkRUFMaYG'
+PS = gg.prompt({'✅Giriş Paneli✅'},{[1]=''},{[1]='text'})
+if not PS the﻿n os.exit() 
+end 
+if PS[1] == Password then 
+gg.toast('Key Doğrulandı'
+gg.alert("❤️Hoş Geldiniz Efendim❤️")
+else 
+gg.alert('Geçersiz Anahtar\n⚠️Admin Değilsin⚠️') os.exit() end
+
+if os.date("%Y%m%d") > VUNuTsSerEDbkRUFMaYG then
+  hh = gg.alert("⛔ Key Süreniz Dolmuştur ⛔")
+  os.exit()
+end
+asd()
+end
+
+if cbd==2 then
+os.exit()
+end
+end
+
+function bedava()
+SnLcYSbBBaTvqtkabKhiy = '99999999'
+if os.date("%Y%m%d") > SnLcYSbBBaTvqtkabKhiy then
+  hh = gg.alert("⛔Script Süreniz Dolmuştur⛔")
+  os.exit()
+end
+asd()
+end
+
+function exit()
+os.exit()
+end
+
+--Script Başlangıç Yeri
+
+i="Güncelleme Durumu: Bakım Var"
+
+
+otu=gg.choice({
+	"✨Vip Üyelik Bölümü✨",
+	"🆓Bedava Giriş🆓",
+	"❌Çıkış❌"
+	},nil,i)
+
+if otu==1 then
+vip()
+end
+if otu==2 then 
+bedava()
+end
+
+if otu==3 then
+exit()
+end
