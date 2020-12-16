@@ -31,6 +31,8 @@ elliaimbot_checker = off
 magic_checker = off
 brutal_kafadanchecker = off
 norecoil_checker = off
+smallcross_checker = off
+uzunatlama_checker = off
 
 function HOME()
 SN = gg.choice({
@@ -228,7 +230,6 @@ gg.clearResults()
   gg.searchNumber("-1.36203639e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
   lessrecoil = gg.getResults(99)
   gg.editAll("0", gg.TYPE_FLOAT)
-  gg.toast("Less Recoil ")
 gg.toast("Less Recoil")
 else
 if less_checker == on then
@@ -289,6 +290,8 @@ br=gg.choice({
     "🤯Brutal Kafadan Vurma[Lobi+Oyun]🤯"..brutal_kafadanchecker,
 	"🔫AimBot 360⁰ Yeni[Oyun]🔫"..elliaimbot_checker,
 	"🔫Sıfır Sekme[Lobi]🔫"..norecoil_checker,
+	"➕ Küçük Artı[Oyun]➕"..smallcross_checker,
+	"🦘Uzun Atlama[Oyun]🦘"..uzunatlama_checker,
 	"🔙Geri🔙" })
 	
 if br==1 then
@@ -423,24 +426,109 @@ end
 if br==5 then
 if norecoil_checker == off then
 norecoil_checker = on
-gg.clearResults()
-gg.setRanges(gg.REGION_CODE_APP)
-gg.searchNumber("495,979,008;-300,938,736;-516,948,194:9", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.refineNumber("-300,938,736", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-norecoil = gg.getResults(551)
-gg.editAll("0", gg.TYPE_DWORD)
-gg.clearResults()
+gg.setRanges (gg.REGION_ANONYMOUS)
+gg.searchNumber ("8247572459728890880.0", gg.TYPE_QWORD)
+gg.getResultsCount ()
+gg.clearResults ()
+gg.setRanges (gg.REGION_C_DATA | gg.REGION_CODE_APP)
+gg.searchNumber ("- 2.786982e28; -3.7444097e28; -1.1368837e-13 ::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber ("- 3.7444097e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+norecoil = gg.getResults (5)
+gg.editAll ("0", gg.TYPE_FLOAT)
+gg.clearResults ()
+gg.setRanges (gg.REGION_C_DATA | gg.REGION_CODE_APP)
+gg.searchNumber ("- 2.8111605e28; -3.7444097e28; -1.1144502e28; 128.0 ::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber ("- 1.1144502e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+noreciki = gg.getResults (1)
+gg.editAll ("0", gg.TYPE_FLOAT)
+gg.clearResults ()
+gg.setRanges (gg.REGION_C_DATA | gg.REGION_CODE_APP)
+gg.searchNumber ("- 6.1549454e27; 1.8638966e-20; -1.1144502e28; 0 ::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber ("- 1.1144502e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+norecuc = gg.getResults (1)
+gg.editAll ("0", gg.TYPE_FLOAT)
+gg.clearResults ()
+gg.setRanges (gg.REGION_C_DATA | gg.REGION_CODE_APP)
+gg.searchNumber ("- 1387800265460020720", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.clearResults ()
+gg.clearResults ()
+gg.setRanges (gg.REGION_C_DATA | gg.REGION_CODE_APP)
+gg.searchNumber ("- 1 331 928 324 405 720 525", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress ("AF8", -1, gg.TYPE_QWORD, gg.SIGN_EQUAL, 0, -1)
+norecdort = gg.getResults (7)
+gg.editAll ("- 1 331 928 328 390 574 080", gg.TYPE_QWORD)
+gg.clearResults ()
+gg.searchNumber ("- 1 387 800 265 460 020 720", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress ("7B8", -1, gg.TYPE_QWORD)
+norecbes = gg.getResults (24)
+gg.editAll ("- 1 387 800 268 364 578 816", gg.TYPE_QWORD)
+gg.clearResults ()
+gg.searchNumber ("4 827 858 804 535 200 272", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+norecalt = gg.getResults (30)
+gg.editAll ("4 827 858 800 541 171 712", gg.TYPE_QWORD)
+gg.clearResults ()
 gg.toast("Sekmeme Aktif Edildi")
 else
 if norecoil_checker == on then
 norecoil_checker = off
 gg.setValues(norecoil)
+gg.setValues(noreciki)
+gg.setValues(norecuc)
+gg.setValues(norecdort)
+gg.setValues(norecbes)
+gg.setValues(norecalt)
 gg.toast("Sekmeme Kapatıldı")
 end
 end
 end
 
 if br==6 then
+if smallcross_checker == off then
+smallcross_checker = on
+gg.clearResults()
+  gg.setRanges(32)
+  gg.searchNumber("2~4;1.09375;1;18;3.5::25", 16, false, 536870912, 0, -1)
+  gg.searchNumber("2~4;1.09375::5", 16, false, 536870912, 0, -1)
+  gg.searchNumber("2~4", 16, false, 536870912, 0, -1)
+  small = gg.getResults(50)
+  gg.editAll("-0.5", 16)
+  gg.clearResults()
+  gg.toast("Küçük Artı Aktif")
+else
+if smallcross_checker == on then
+smallcross_checker = off
+gg.setValues(small)
+gg.toast("Küçük Artı Devre Dışı")
+end
+end
+end
+
+if br==7 then
+if uzunatlama_checker == off then
+uzunatlama_checker = on
+gg.clearResults()
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  gg.searchNumber("7.0064923e-45F;0.6~1;1065353216D;100F;1065353216D;2500000000F;0.10000000149F;88F::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.refineNumber("0.6~1", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  uzun = gg.getResults(2500)
+  gg.editAll("3.5241295", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.searchNumber("300;0;0.05000000075;2;25::17", gg.TYPE_FLOAT, false)
+  gg.refineNumber("0.05000000075", gg.TYPE_FLOAT, false)
+  uzun2 = gg.getResults(2400)
+  gg.editAll("2.1241295", gg.TYPE_FLOAT)
+  gg.toast("Uzun Atlama Aktif")
+else
+if uzunatlama_checker == on then
+uzunatlama_checker = off
+gg.toast("Uzun Atlama Devre Dışı")
+gg.setValues(uzun)
+gg.setValues(uzun2)
+end
+end
+end
+
+if br==8 then
 HOME()
 end
 end
@@ -510,7 +598,7 @@ end
 
 --Script Başlangıç Yeri
 
-i="Güncelleme Durumu: Bakım Var"
+i="Güncelleme Durumu: Hile Aktif"
 
 
 otu=gg.choice({
