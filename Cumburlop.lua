@@ -598,7 +598,7 @@ gg.toast('✅Key Doğrulandı✅')
 else 
 gg.alert('Geçersiz Anahtar\n⚠️Anahtar @zeroohack de Paylaşıldı⚠️') os.exit() end
 
-SnLcYSbBBaTvqtkabKhiy = '99999999'
+SnLcYSbBBaTvqtkabKhiy = '20201223'
 if os.date("%Y%m%d") > SnLcYSbBBaTvqtkabKhiy then
   hh = gg.alert("⛔Script Süreniz Dolmuştur⛔")
   os.exit()
