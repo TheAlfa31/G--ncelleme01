@@ -1,5 +1,4 @@
-ProgressBar =  "║░░░░░░░░░░░░░░░║";for x = 1,20,1 do gg.sleep(1000) ProgressBar = ProgressBar:gsub("░","▓",1);gg.toast(ProgressBar) end gg.sleep(100) 
-gg.sleep(500)
+ ProgressBar =  "║░░░░░░░░░░░░░░░║";for x = 1,20,1 do gg.sleep(1000) ProgressBar = ProgressBar:gsub("░","▓",1);gg.toast(ProgressBar) end gg.sleep(100)
 gg.clearResults()
 gg.setRanges(gg.REGION_C_ALLOC)
 gg.searchNumber("196,864;16,842,753::5", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1) 
@@ -87,5 +86,4 @@ gg.getResults(50000)
 gg.editAll("0", gg.TYPE_DWORD)
 gg.clearResults()
 gg.alert("✓™ZERO HACK 🔥\n")
-gg.toast("🛡️𝐀𝐧𝐭𝐢 𝐁𝐚𝐧🛡️")
-end
+gg.clearList()
