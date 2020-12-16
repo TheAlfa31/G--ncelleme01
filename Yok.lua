@@ -349,6 +349,19 @@ end
 if br==3 then
 if brutal_kafadanchecker == off then
 brutal_kafadanchecker = on
+gg.clearResults()
+gg.setRanges(32)
+gg.searchNumber("1F;-8.6457681e12F;15F;28F;16F;26F;8F;18F:512", 16, false, 536870912, 0, -1)
+gg.searchNumber("15.0F;28.4F;16.0F;26.0F;8.4F;18.4F:512", 16, false, 536870912, 0, -1)
+kfaki=gg.getResults(500)
+gg.editAll("95", 16)
+gg.clearResults()
+gg.setRanges(32)
+gg.searchNumber("9.20161819458.43;25;30.5", 16, false, 536870912, 0, -1)
+gg.searchNumber("25;30.5", 16, false, 536870912, 0, -1)
+kfabi=gg.getResults(100)
+gg.editAll("350", 16)
+gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("9.201618;30.5;25", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -366,6 +379,8 @@ gg.clearResults()
 else
 if brutal_kafadanchecker == on then
 brutal_kafadanchecker = off
+gg.setValues(kfaki)
+gg.setValues(kfabi)
 gg.setValues(kafabir)
 gg.setValues(kafaiki)
 gg.toast("Kapalı")
