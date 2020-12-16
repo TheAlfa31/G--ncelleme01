@@ -287,9 +287,9 @@ function F3()
 br=gg.choice({
 	"📡Anten [Lobi+Oyun]📡"..anten_checker,
 	"🔥Magic Brutal[Oyun]🔥"..magic_checker,
-    "🤯Brutal Kafadan Vurma[Lobi+Oyun]🤯"..brutal_kafadanchecker,
+    "🤯Brutal Kafadan Vurma[Oyun]🤯"..brutal_kafadanchecker,
 	"🔫AimBot 360⁰ Yeni[Oyun]🔫"..elliaimbot_checker,
-	"🔫Sıfır Sekme[Lobi]🔫"..norecoil_checker,
+	"🔫Sıfır Sekme[Oyun]🔫"..norecoil_checker,
 	"➕ Küçük Artı[Oyun]➕"..smallcross_checker,
 	"🦘Uzun Atlama[Oyun]🦘"..uzunatlama_checker,
 	"🔙Geri🔙" })
