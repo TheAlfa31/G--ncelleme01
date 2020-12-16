@@ -223,12 +223,12 @@ if sf==2 then
 if less_checker == off then
 less_checker = on
 gg.clearResults()
-  gg.setRanges(gg.REGION_ANONYMOUS)
-  gg.searchNumber("1,348,759,109;1,953,067,887;1,634,692,166;1,920,287,604:512", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  gg.searchNumber("1,634,692,166", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-  lessrecoil = gg.getResults(10)
-  gg.editAll("0", gg.TYPE_DWORD)
-  gg.clearResults()
+  gg.setRanges(gg.REGION_C_DATA)
+  gg.searchNumber("-2.2673448e24;-1.36203639e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.searchNumber("-1.36203639e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  lessrecoil = gg.getResults(99)
+  gg.editAll("0", gg.TYPE_FLOAT)
+  gg.toast("Less Recoil ")
 gg.toast("Less Recoil")
 else
 if less_checker == on then
