@@ -58,6 +58,8 @@ saf=gg.choice({
 	},nil,"💎Aɳƚι Bαɳ Mҽɳü💎")
 	
 if saf==1 then
+ProgressBar =  "║░░░░░░░░░░░░░░░║";for x = 1,20,1 do gg.sleep(1000) ProgressBar = ProgressBar:gsub("░","▓",1);gg.toast(ProgressBar) end gg.sleep(100) 
+gg.sleep(500)
 if antiban_checkerer == off then
  antiban_checkerer = on
 gg.clearResults()
