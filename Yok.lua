@@ -160,6 +160,7 @@ gg.editAll("0", gg.TYPE_DWORD)
 gg.clearResults()
 gg.alert("Zero✓")
 HOME()
+end
 else
 antiban_checkerer = on
 gg.alert("Anti Banı Bikere Çalıştırman Yeter Kardeşim❤️")
