@@ -539,10 +539,10 @@ end
 end
 
 function Exit()
+gg.setVisible(true)
 print("✅Boost İşlemi Tamamdır✅\n🛡️S16 Vip V1🛡️\n🔥Zero Hack🔥")
 gg.skipRestoreState()
   os.exit()
-  gg.setVisible(true)
 end 
 
 while true do
