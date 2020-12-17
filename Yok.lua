@@ -590,6 +590,15 @@ end
 end
 
 function bedava()
+Password﻿ = 'SnLcYSbBBaTvqtkabKhiy'
+PS = gg.prompt({'✅Giriş Paneli✅'},{[1]=''},{[1]='text'})
+if not PS the﻿n os.exit() 
+end 
+if PS[1] == Password then 
+gg.toast('Key Doğrulandı')
+else 
+gg.alert('Geçersiz Anahtar\n⚠️Key @zeroohack de Paylaşıldı⚠️') os.exit() end
+
 SnLcYSbBBaTvqtkabKhiy = '99999999'
 if os.date("%Y%m%d") > SnLcYSbBBaTvqtkabKhiy then
   hh = gg.alert("⛔Script Süreniz Dolmuştur⛔")
