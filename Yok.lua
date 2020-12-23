@@ -81,7 +81,7 @@ gg.clearResults()
   gg.setRanges(gg.REGION_C_ALLOC)
   gg.searchNumber("196,864;16,842,753::5", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
   if gg.getResultCount() == 0 then
-    gg.alert("❌ BYPASS NOT ACTIVE ❌\n\nRESTART GAME AND TRY AGAIN...!!!")
+    gg.alert("❌Bypass Açılmadı 32 Bit Kullan❌")
     gg.processKill()
     os.exit()
   else
@@ -192,9 +192,11 @@ antiban_checkerer = on
 gg.alert("Anti Banı Bikere Çalıştırman Yeter Kardeşim❤️")
 end
 end
-end
+
 
 if saf==2 then
+ProgressBar =  "║░░░░░░░░░░░░░░░║";for x = 1,20,1 do gg.sleep(1000) ProgressBar = ProgressBar:gsub("░","▓",1);gg.toast(ProgressBar) end gg.sleep(100) 
+gg.sleep(500)
 if antibank_checkerer == off then
 antibank_checkerer = on
 gg.clearResults()
@@ -206,7 +208,7 @@ gg.clearResults()
   gg.setRanges(gg.REGION_C_ALLOC)
   gg.searchNumber("196,864;16,842,753::5", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
   if gg.getResultCount() == 0 then
-    gg.alert("❌ BYPASS NOT ACTIVE ❌\n\nRESTART GAME AND TRY AGAIN...!!!")
+    gg.alert("❌Bypass Açılmadı 32 Bit Kullan❌")
     gg.processKill()
     os.exit()
   else
