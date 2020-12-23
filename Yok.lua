@@ -72,49 +72,119 @@ gg.sleep(500)
 if antiban_checkerer == off then
  antiban_checkerer = on
 gg.setVisible(false)
-os.remove("src/main/java/com/google/errorprone/annotations")
-os.remove("src/main/java/com/google/errorprone/annotations")
-os.remove("src/main/java/com/google/errorprone/annotations/concurrent")
-os.remove("third_party.java_src.error_prone.project.annotations.Google_internal")
 gg.clearResults()
-gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("9.21956299e-41;16384D;16384D;16384D;16384D;16384D::24", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-if gg.getResultCount() == 0 then
-else
-gg.searchNumber("9.21956299e-41", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-end
-gg.clearResults()
-gg.setRanges(gg.REGION_CODE_APP)
-gg.searchNumber("2.2958874e-41", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(9999)
-gg.editAll("0", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.setRanges(gg.REGION_C_ALLOC)
-gg.searchNumber("132098", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.refineNumber("132098", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(2000000)
-gg.addListItems({})
-gg.editAll("0", gg.TYPE_DWORD)
-gg.clearResults()
-gg.setRanges(gg.REGION_CODE_APP)
-gg.searchNumber("1179403647", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.refineNumber("1179403647", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(2000000)
-gg.addListItems({})
-gg.editAll("0", gg.TYPE_DWORD)
-gg.clearResults()
-gg.setRanges(gg.REGION_CODE_APP)
-gg.searchNumber("65793", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.refineNumber("67593", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(2000000)
-gg.addListItems({})
-gg.editAll("0", gg.TYPE_DWORD)
-gg.clearResults()
-gg.setRanges(gg.REGION_CODE_APP)
-gg.searchNumber("13,073.3740234375", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(9999)
-gg.editAll("0", gg.TYPE_FLOAT)
-gg.clearResults()
+  os.remove("src/main/java/com/google/errorprone/annotations")
+  os.remove("src/main/java/com/google/errorprone/annotations")
+  os.remove("src/main/java/com/google/errorprone/annotations/concurrent")
+  os.remove("third_party.java_src.error_prone.project.annotations.Google_internal")
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("196,864;16,842,753::5", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  if gg.getResultCount() == 0 then
+    gg.alert("❌ BYPASS NOT ACTIVE ❌\n\nRESTART GAME AND TRY AGAIN...!!!")
+    gg.processKill()
+    os.exit()
+  else
+    gg.searchNumber("196,864", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+    n = gg.getResultCount()
+    pg = gg.getResults(n)
+    for i = 1, n do
+      gg.addListItems({
+        [1] = {
+          address = pg[i].address + 236,
+          flags = 4,
+          freeze = true,
+          value = 67109633
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = pg[i].address + 232,
+          flags = 4,
+          freeze = true,
+          value = 67109633
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = pg[i].address + 228,
+          flags = 4,
+          freeze = true,
+          value = 67109633
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = pg[i].address + 340,
+          flags = 4,
+          freeze = true,
+          value = 67109633
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = pg[i].address + 344,
+          flags = 4,
+          freeze = true,
+          value = 67109633
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = pg[i].address - 314,
+          flags = 4,
+          freeze = true,
+          value = 67109633
+        }
+      })
+    end
+  end
+  gg.clearList()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_CODE_APP)
+  gg.searchNumber("2.2958874e-41", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(50000)
+  gg.editAll("67109633", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_CODE_APP)
+  gg.searchNumber("9.21956299e-41", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(50000)
+  gg.editAll("67109633", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("135682;144387", gg.TYPE_DWORD)
+  gg.refineNumber("135682", gg.TYPE_DWORD)
+  gg.getResults(50000)
+  gg.editAll("67109633", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("134658;131586", gg.TYPE_DWORD)
+  gg.refineNumber("134658", gg.TYPE_DWORD)
+  gg.getResults(50000)
+  gg.editAll("67109633", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("133378;262403", gg.TYPE_DWORD)
+  gg.refineNumber("133378", gg.TYPE_DWORD)
+  gg.getResults(50000)
+  gg.editAll("67109633", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("131842;132098", gg.TYPE_DWORD)
+  gg.refineNumber("131842", gg.TYPE_DWORD)
+  gg.getResults(50000)
+  gg.editAll("67109633", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("133378;262403", gg.TYPE_DWORD)
+  gg.refineNumber("133378", gg.TYPE_DWORD)
+  gg.getResults(50000)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_CODE_APP)
+  gg.searchNumber("13,073.3740234375", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(50000)
+  gg.editAll("67109633", gg.TYPE_FLOAT)
+  gg.clearResults()
 gg.alert("Zero✓")
 HOME()
 else
@@ -125,15 +195,126 @@ end
 end
 
 if saf==2 then
-gg.alert('Bakım')
-HOME()
-----if antibank_checkerer == off then
-----antibank_checkerer = on
------gg.alert("🔰Bu Bölüm üzerinde Hala Çalışılıyor...🔰")
-----else
-----antibank_checkerer = on
------gg.alert("Bikere Çalıştırman Yeter Kardeşim❤️")
-----end
+if antibank_checkerer == off then
+antibank_checkerer = on
+gg.clearResults()
+  os.remove("src/main/java/com/google/errorprone/annotations")
+  os.remove("src/main/java/com/google/errorprone/annotations")
+  os.remove("src/main/java/com/google/errorprone/annotations/concurrent")
+  os.remove("third_party.java_src.error_prone.project.annotations.Google_internal")
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("196,864;16,842,753::5", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+  if gg.getResultCount() == 0 then
+    gg.alert("❌ BYPASS NOT ACTIVE ❌\n\nRESTART GAME AND TRY AGAIN...!!!")
+    gg.processKill()
+    os.exit()
+  else
+    gg.searchNumber("196,864", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
+    n = gg.getResultCount()
+    pg = gg.getResults(n)
+    for i = 1, n do
+      gg.addListItems({
+        [1] = {
+          address = pg[i].address + 236,
+          flags = 4,
+          freeze = true,
+          value = 67109633
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = pg[i].address + 232,
+          flags = 4,
+          freeze = true,
+          value = 67109633
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = pg[i].address + 228,
+          flags = 4,
+          freeze = true,
+          value = 67109633
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = pg[i].address + 340,
+          flags = 4,
+          freeze = true,
+          value = 67109633
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = pg[i].address + 344,
+          flags = 4,
+          freeze = true,
+          value = 67109633
+        }
+      })
+      gg.addListItems({
+        [1] = {
+          address = pg[i].address - 314,
+          flags = 4,
+          freeze = true,
+          value = 67109633
+        }
+      })
+    end
+  end
+  gg.clearList()
+  gg.clearResults()
+  gg.setRanges(gg.REGION_CODE_APP)
+  gg.searchNumber("2.2958874e-41", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(50000)
+  gg.editAll("67109633", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_CODE_APP)
+  gg.searchNumber("9.21956299e-41", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(50000)
+  gg.editAll("67109633", gg.TYPE_FLOAT)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("135682;144387", gg.TYPE_DWORD)
+  gg.refineNumber("135682", gg.TYPE_DWORD)
+  gg.getResults(50000)
+  gg.editAll("67109633", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("134658;131586", gg.TYPE_DWORD)
+  gg.refineNumber("134658", gg.TYPE_DWORD)
+  gg.getResults(50000)
+  gg.editAll("67109633", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("133378;262403", gg.TYPE_DWORD)
+  gg.refineNumber("133378", gg.TYPE_DWORD)
+  gg.getResults(50000)
+  gg.editAll("67109633", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("131842;132098", gg.TYPE_DWORD)
+  gg.refineNumber("131842", gg.TYPE_DWORD)
+  gg.getResults(50000)
+  gg.editAll("67109633", gg.TYPE_DWORD)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_C_ALLOC)
+  gg.searchNumber("133378;262403", gg.TYPE_DWORD)
+  gg.refineNumber("133378", gg.TYPE_DWORD)
+  gg.getResults(50000)
+  gg.clearResults()
+  gg.setRanges(gg.REGION_CODE_APP)
+  gg.searchNumber("13,073.3740234375", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+  gg.getResults(50000)
+  gg.editAll("67109633", gg.TYPE_FLOAT)
+  gg.clearResults()
+else
+antibank_checkerer = on
+gg.alert("Bikere Çalıştırman Yeter Kardeşim❤️")
+end
+end
 end
 
 if saf==3 then
