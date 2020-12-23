@@ -115,7 +115,6 @@ gg.searchNumber("13,073.3740234375", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(9999)
 gg.editAll("0", gg.TYPE_FLOAT)
 gg.clearResults()
-end
 gg.alert("Zero✓")
 HOME()
 else
