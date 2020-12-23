@@ -574,6 +574,7 @@ otu=gg.choice({
 if otu==1 then
 vip()
 end
+
 if otu==2 then 
 bedava()
 end
