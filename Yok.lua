@@ -498,7 +498,7 @@ end
 
 function Exit()
 gg.setVisible(true)
-print("✅Boost İşlemi Tamamdır✅\n🛡️S16 Vip V1🛡️\n🔥Zero Hack🔥")
+print("✅Boost İşlemi Tamamdır✅\n🛡️S16 Vip V1🛡️\n🔥Zara Hack🔥")
 gg.skipRestoreState()
   os.exit()
 end 
