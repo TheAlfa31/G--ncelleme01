@@ -320,8 +320,19 @@ end
 end
 
 if saf==3 then
-gg.alert('Üzerinde Çalışılıyor...')
-HOME()
+if ucparti_checkerer == off then
+ucparti_checkerer = on
+gg.clearResults()
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("9.21956299e-41", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1) 
+gg.getResults(550292) 
+gg.editAll("0", gg.TYPE_FLOAT) 
+gg.clearResults()
+else
+ucparti_checkerer = on
+gg.alert("Bikere Çalıştırman Yeter Kardeşim❤️")
+end
+end
 end
 
 if saf==4 then
