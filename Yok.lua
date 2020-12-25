@@ -333,7 +333,6 @@ ucparti_checkerer = on
 gg.alert("Bikere Çalıştırman Yeter Kardeşim❤️")
 end
 end
-end
 
 if saf==4 then
 HOME()
