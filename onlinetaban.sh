@@ -1,6 +1,7 @@
 # echo "bash <(curl -L https://raw.githubusercontent.com/TheAlfa31/G--ncelleme01/main/onlinetaban.sh)" > /storage/emulated/0/execute.sh
 # bash execute.sh
-
+su
+cd /storage/emulated/0/
 echo '
 echo "
 ----------------------------------------
