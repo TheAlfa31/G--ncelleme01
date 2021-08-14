@@ -13,5 +13,3 @@ if os.date("%Y%m%d") > VUNuTsSerEDbkRUFMaYG then
   hh = gg.alert("⛔ Key Süreniz Dolmuştur ⛔")
   os.exit()
 end
-gg.alert("MENÜ")
-end
